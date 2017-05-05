@@ -16,6 +16,12 @@ https://github.com/voxpupuli/librarian-puppet
 
 You're done!
 
+## Create the share folder
+
+The project uses "nfs" to share files. You need to create an empty "share" folder to get nfs work.
+
+	mkdir share
+
 ## Make it run
 
 	vagrant up

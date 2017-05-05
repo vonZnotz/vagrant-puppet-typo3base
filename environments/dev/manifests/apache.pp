@@ -23,8 +23,6 @@ apache::vhost { 'typo3base.dev - non-ssl':
 apache::vhost { 'typo3base.dev':
 	port            => '443',
 	docroot         => '/var/www/typo3base/web',
-	docroot_owner   => 'typo3base',
-	docroot_group   => 'typo3base',
 	directories     => [
 		{ path             => '/var/www/typo3base/web',
 			directoryindex => '/index.php index.php',

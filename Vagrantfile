@@ -5,6 +5,8 @@ Vagrant.configure("2") do |config|
 		nodeconfig.vm.hostname = "typo3base.box"
 		nodeconfig.vm.network :private_network, ip: '192.168.56.212'
 
+		nodeconfig.vm.synced_folder "share", "/var/www/typo3base", nfs: true
+
 		nodeconfig.vm.provider :virtualbox do |vb|
 			vb.customize [
 				"modifyvm", :id,
