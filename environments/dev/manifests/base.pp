@@ -6,7 +6,7 @@ package {
 		ensure => present;
 }
 
-accounts::user { 'typo3base':
+accounts::user { 'ubuntu':
 	groups  => [
 		'www-data',
 		'adm'

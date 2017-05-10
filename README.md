@@ -1,11 +1,16 @@
 typo3base vagrant
 =================
 
-## Description
+# Description
 
-This is a simple lamp stack sandbox
+This lamp stack can be used for the project: https://github.com/vonZnotz/typo3base
 
-## Installation
+All files are synced from "share" to "/var/www/typo3base". The owner of the files is "ubuntu". If you need special
+write permissions in you application, you have to resolve this by hand.
+
+# Installation
+
+## Resolve dependencies
 
 Make use of librarian-puppet to get avoid of git submodules
 
@@ -18,9 +23,7 @@ You're done!
 
 ## Create the share folder
 
-The project uses "nfs" to share files. You need to create an empty "share" folder to get nfs work.
-
-	mkdir share
+The project uses "rsync" to share files. You need to create a "share" item (link or folder)  to get rsyncswork.
 
 ## Make it run
 
@@ -40,7 +43,7 @@ MailHog - current (http://typo3base.dev:8025)
 
 ## SSH user
 
-Username: typo3base
+Username: ubuntu
 
 Password: start100
 

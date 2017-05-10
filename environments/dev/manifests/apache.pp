@@ -16,6 +16,8 @@ apache::vhost { 'typo3base.dev - non-ssl':
 	servername      => 'typo3base.dev',
 	port            => '80',
 	docroot         => '/var/www/typo3base',
+	docroot_owner   => 'ubuntu',
+	docroot_group   => 'ubuntu',
 	redirect_status => 'permanent',
 	redirect_dest   => 'https://typo3base.dev/'
 }
@@ -23,6 +25,8 @@ apache::vhost { 'typo3base.dev - non-ssl':
 apache::vhost { 'typo3base.dev':
 	port            => '443',
 	docroot         => '/var/www/typo3base/web',
+	docroot_owner   => 'ubuntu',
+	docroot_group   => 'ubuntu',
 	directories     => [
 		{ path             => '/var/www/typo3base/web',
 			directoryindex => '/index.php index.php',
