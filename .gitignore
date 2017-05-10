@@ -1,5 +1,5 @@
 .vagrant/
-share/
+share
 .idea/
 .tmp/
 modules/
