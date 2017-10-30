@@ -6,4 +6,11 @@ class { '::php::globals':
 		'PHP/DisplayErrors' => 'On',
 	},
 	manage_repos => true,
+	extensions => {
+		imagick => { },
+		gd => { },
+		mysqli => { },
+		soap => { },
+		zip => { }
+	}
 }

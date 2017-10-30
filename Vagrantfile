@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 			vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
 		end
 
-		nodeconfig.vm.provision "shell", inline: "apt-get update && apt-get install puppet -y && apt-get upgrade"
+		nodeconfig.vm.provision "shell", inline: "apt-get update && apt-get install puppet -y"
 
 		nodeconfig.vm.provision :puppet do |puppet|
 			puppet.environment = "dev"
