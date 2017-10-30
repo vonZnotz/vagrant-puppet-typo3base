@@ -12,5 +12,7 @@ class { '::php::globals':
 		mysqli => { },
 		soap => { },
 		zip => { }
-	}
+	},
+	fpm_user => 'ubuntu',
+	fpm_group => 'ubuntu'
 }
